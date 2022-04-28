@@ -1,1 +1,0 @@
-# dynamictypes-vCenterDrsRules.package
