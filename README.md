@@ -4,8 +4,9 @@ This vRealize Orchestrator package creates a Dynamic Type (DT) for the managemen
  
 
 Requirements:
-Running Instance of vRealize Automation 8.x
-vRealize Orchestrator with the vSphere Plugin configured with vCenter Endpoints that you wish to manage the Cluster DRS Rules
+1. Running Instance of vRealize Automation 8.x
+2. vRealize Orchestrator with the vSphere Plugin configured with vCenter Endpoints that you wish to manage the Cluster DRS Rules
+3. vRealize Orchestrator with the vRA Plugin configured with vRA Endpoint that you wish to create the Custom Resource on
 
 ________________________________________
 Content:
