@@ -25,6 +25,11 @@ deleteDrsRule – DT
 Used to detroy the Custom Resource in vRA
 Destroys the provided DRS Rule set
 
+Content:
+Location: Workflows/custom/vCenter/drs/dynamicType/configuration
+Create vRA Custom Resource
+Used to create the custom resource in vRA
+
 Location: Actions/custom.vmware.vc.vm
 findVirtualMachineByName
 
@@ -70,19 +75,8 @@ Ref. https://docs.vmware.com/en/vRealize-Orchestrator/8.6/com.vmware.vrealize.or
 3.	Validate that the dynamic Type is working by going browsing the existing vCenter Cluster DRS rules under ‘Inventory/Dynamic Types/vcClusterDrsRules/vCenterServers’
 Example:
 	 
- 
-4.	Create the vRealize Automation - Cloud Assembly Custom Resource with the following parameters:
-Ref. https://docs.vmware.com/en/vRealize-Automation/8.6/Using-and-Managing-Cloud-Assembly/GUID-9722DEAD-CDCC-4E66-8357-A17B0E0CF783.html
-
-Name	vCenterClusterDrsRuleSet
-
-Description	Custom Resource to create / update and delete vCenter Cluster DRS Affinity/Anti-Affinity RuleSets
-Resource Type	Custom.vCenterClusterDrsRuleSet
-Activate	Enabled / True
-Based on	vRO Inventory
-Create	CreateDrsRule - DT
-Update	updateDrsRule - DT
-Destroy	deleteDrsRule - DT
+ 4. Run the 'Create vRA Custom Resource' workflow and select the proper vRA Endpoint.
+ This will create the custom resource in the vRA instance selected.  It validates the object doesn't exist before proceeding.
 
 ________________________________________
 
