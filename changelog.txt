@@ -1,0 +1,9 @@
+Change log:
+_________________
+2023-11-20 : 
+- Added a new boolean input appendExisting
+  Required: no  
+  Default value: false
+  Description: Adds the option to append existing Rule and VM Group.  When this flag is set to true, the rule and vm group are not created or deleted.  Giving the option to join an existing VM Group. 
+
+  *** Important: Addded a 'vraHost' variable on the 'deleteDrsRule - DT' that is bound to the configuration item vRA plug-in: defaultHost.  Please ensure that this value is set in vRO. ***
